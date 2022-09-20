@@ -1,0 +1,171 @@
+:root{
+    --main-bg-color:#2874f0;
+}
+
+*{
+ box-sizing: border-box;   margin: 0;padding: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f6;
+}
+
+header{
+    background-color:var(--main-bg-color);
+    color: white;
+    font-weight:bold;
+    height: 55px;
+    position: sticky;
+   top: 0px;
+   
+   
+    
+    
+}
+.logo
+{
+display: flex;
+align-content: center;
+padding-left:16px;
+}
+
+ 
+.btn-log{
+    
+    padding-left:16px;
+    
+}
+.lbtn{
+    height: 30px;
+    cursor: pointer;
+    width: 100px;
+    background-color: white;
+    color: var(--main-bg-color);
+    border: 0px;
+    font-weight: bold;
+}
+input{
+    border: 0px white;
+    padding-left: 10px;
+}
+.search-box{
+    padding-left:16px;
+
+}
+#header-search{
+    height: 35px;
+    width: 380px;
+    margin:2px;
+}
+nav{
+    margin:0px  5px 5px 5px;
+    display: flex;
+    justify-content:center;
+    height: 48px;
+    align-items: center;
+}
+nav ul {
+    margin:5px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;
+    padding-left:16px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    margin:5px;
+    text-decoration: none;
+    padding:0px 35px ;
+}
+.sub-menu{
+    display: none;
+}
+
+nav ul li :hover ~  .sub-menu 
+{
+    display: block;
+    position: absolute;
+    
+    
+}
+nav ul  :hover~ .sub-menu ul
+{
+    display: block;
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: -10%;
+
+
+   
+    }
+    
+    nav .sub-menu ul li a {
+        color: black;
+
+    }
+nav ul li :hover~ .sub-menu li{
+    color: black;
+    list-style: none;
+    width:250px;
+    /* padding: 10px; */
+    line-height: 50px;
+   
+    font-size: 16px;
+    font-weight: bold;
+  
+   align-content: left;
+}
+
+
+.contain {
+    width: 90vw;
+    margin : auto;
+}
+.category{
+    display:flex;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.slider{
+    width: 100%;
+    margin-top:12px ;
+}
+.slider img{
+    width: 100%;
+   
+}
+.category img{
+    height:68px ;
+}
+.offer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* column-gap: 30px; */
+    max-width: 90vw;
+    margin-top: 12px;
+   
+}
+.offer img{
+    width: 30vw;
+
+    
+}
+footer{
+    background-color:var(--main-bg-color);;
+    color: white;
+    height: 12vh;
+}
+.container{
+    background-color: #f1f3f6;      
+    min-height:calc(100vh - 12vh - 55px);
+}
+
+
+
